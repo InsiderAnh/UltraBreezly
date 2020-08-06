@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UltraBreezly:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UltraBreezly_jar</output-path>
+    <root id="archive" name="UltraBreezly.jar">
+      <element id="module-output" name="UltraBreezly" />
+    </root>
+  </artifact>
+</component>

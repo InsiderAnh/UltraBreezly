@@ -1,0 +1,3 @@
+messages:
+  join: "&aThe &e<player> &aplayer has entered the game."
+  death: "&cYou're dead."

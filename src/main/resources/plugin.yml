@@ -1,0 +1,8 @@
+main: io.github.Leonardo0013YT.UltraBreezly.Main
+author: Leonardo0013YT
+name: UltraBreezly
+version: 1.0.0
+depend: [FastAsyncWorldEdit, WorldEdit]
+commands:
+  breezlys:
+  breezly:
