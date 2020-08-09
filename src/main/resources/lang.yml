@@ -1,3 +1,20 @@
 messages:
+  alreadyGame: "&cYou stay already in game."
+  noPermission: "&cYou don´t have permission."
+  noGame: "&cYou don't have any games."
   join: "&aThe &e<player> &aplayer has entered the game."
   death: "&cYou're dead."
+setup:
+  setMainLobby: "&aThe main lobby has been established."
+  alreadyCreating: "&cYou already creating arena."
+  noCreating: "&cYou don't stay creating arena."
+  created: "&aYou have created new &e<name>&a."
+  setSpawn: "&aSpawn set &e<spawn>&a."
+  saved: "&aThe arena has been saved."
+scoreboards:
+  main-title: "&e&lULTRA BREEZLY"
+  main: |-
+    &7
+    &7BestTime: &a<time>
+    &7
+    &emc.spigot.net

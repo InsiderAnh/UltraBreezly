@@ -139,6 +139,13 @@ public class Settings {
         return this.config.getString(s).replaceAll("<l>", "¡").replaceAll("&", "§").replaceAll("-,-", "ñ");
     }
 
+    public String get(Player p, String s) {
+        if (config.getString(s) == null) {
+            return "";
+        }
+        return this.config.getString(s).replaceAll("<l>", "¡").replaceAll("&", "§").replaceAll("-,-", "ñ");
+    }
+
     public String getOrDefault(String s, String def) {
         if (config.isSet(s)) {
             return get(s);

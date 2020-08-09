@@ -42,6 +42,15 @@ public class Game {
         sendGameMessage(plugin.getLang().get("messages.join").replace("<player>", p.getName()));
     }
 
+    public void removePlayer(Player p){
+        GamePlayer gp = players.get(p);
+        gp.reset();
+        players.remove(p);
+        if (plugin.getCm().getMainLobby() != null){
+            p.teleport(plugin.getCm().getMainLobby());
+        }
+    }
+
     public void sendGameMessage(String msg){
         for (Player p : players.keySet()){
             p.sendMessage(msg);

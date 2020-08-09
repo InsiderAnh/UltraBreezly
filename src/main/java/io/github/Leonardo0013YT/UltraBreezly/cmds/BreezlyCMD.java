@@ -27,11 +27,18 @@ public class BreezlyCMD implements CommandExecutor {
                 case "join":
                     Game game = plugin.getGm().getGame();
                     if (game == null) {
-                        p.sendMessage("§cDont have any arena.");
+                        p.sendMessage(plugin.getLang().get("messages.noGame"));
+                        return true;
+                    }
+                    if (plugin.getGm().isPlayerGame(p)){
+                        p.sendMessage(plugin.getLang().get("messages.noGame"));
                         return true;
                     }
                     game.addPlayer(p);
                     plugin.getGm().addPlayerGame(p, game.getId());
+                    break;
+                case "leave":
+
                     break;
                 default:
                     sendHelp(sender);
